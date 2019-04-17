@@ -14,7 +14,28 @@
 	</script>
 	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Karla|Rubik:700" rel="stylesheet">
+
+         <!-- background: #c6ffdd; /* fallback for old browsers */ -->
+         <!-- background: -webkit-linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* Chrome 10-25, Safari 5.1-6 */ -->
+         <!-- background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ -->
+
+         <!-- background: #d9a7c7;  /* fallback for old browsers */ -->
+         <!-- background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */ -->
+         <!-- background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ -->
+
+         <!-- background: #FFEFBA;  /* fallback for old browsers */ -->
+         <!-- background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */ -->
+         <!-- background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ -->
+
 	<style>
+     html {
+         min-height: 100%;
+         background: #ECE9E6;  /* fallback for old browsers */
+         background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     }
+
 	 body {
 	     font-family: 'Karla', sans-serif;
 	     font-size: 16px;
@@ -24,15 +45,27 @@
 	 }
 
 	 h1, h2, h3 {
-	     font-family: 'Rubik', sans-serif;
+	     font-family: 'Georgia', sans-serif;
 	 }
+
+     img {
+         width: 50%;
+         height: 50%;
+         object-fit: contain;
+     }
 
 	 #footer {
 	     font-size: smaller;
 	     text-align: right;
-	 }
+     }
 
-	 a {
+     #borderimg {
+         border: 10px solid transparent;
+         padding: 1px;
+         border-image: url(images/border.png) 20% round;
+     }
+
+     a {
 	     color: blue;
 	     text-decoration: none;
 	 }
@@ -44,35 +77,87 @@
 	 .title {
 	     text-align: center;
 	     margin-bottom: 1em;
+         background-color:#000;
+         display:center;
+         padding-left:8px;
+         padding-right:8px;
+         padding-bottom:2px;
+         padding-top:2px;
+         border-radius:16px;
 	 }
-        </style>
+
+     .subtitle {
+	     text-align: center;
+         background-color:#000;
+         display:inline-block;
+         padding-left:8px;
+         padding-right:8px;
+         padding-bottom:2px;
+         padding-top:2px;
+         border-radius:16px;
+     }
+
+     .cyan {
+         color:#62A9FF!important;
+         background-color:#b7effb!important;
+         box-shadow: 0 0 0pt 1pt #62A9FF;
+     }
+
+     .pink {
+         color:#FFACEC!important;
+         background-color:#FFDFF8!important;
+         box-shadow: 0 0 0pt 1pt #FFACEC;
+     }
+
+     .yellish {
+         color:#D9C400!important;
+         background-color:#FFF284!important;
+         box-shadow: 0 0 0pt 1pt #D9C400;
+     }
+
+     .springgreen {
+         color:#8FFF6F!important;
+         background-color:#D2FFC4!important;
+         box-shadow: 0 0 0pt 1pt #8FFF6F;
+     }
+
+     .orchid {
+         color:#8C8CFF!important;
+         background-color:#CACAFF!important;
+         box-shadow: 0 0 0pt 1pt #8C8CFF;
+     }
+
+     p.b {
+         font-style: italic;
+     }
+     p.im {
+         text-align:center
+     }
+    </style>
     </head>
     <body>
-	<h1 class="title">Antoine Laurent</h1>
-	<aside>
-		<!-- <p>I am currently a PhD student at both <a href="https://uqam.ca/">Université du Québec à Montréal</a> (Canada) and <a href="https://www.irisa.fr">IRISA</a> / Univ Rennes (France), supervised by  <a href="https://sebastiengambs.openum.ca/">Sébastien Gambs</a> (<a href="https://legalia.uqam.ca/">LEGALIA</a>), <a href="https://sites.google.com/site/tristanallardhome/">Tristan Allard</a> (<a href="https://profile.cominlabs.u-bretagneloire.fr/">PROFILE</a>) and <a href="https://people.irisa.fr/Elisa.Fromont/">Elisa Fromont</a>.</p> -->
-	    <!-- <p>I hold an MSc in Computer Science from <a href="http://www.ens-rennes.fr">ENS Rennes</a> &amp; <a href="https://www.univ-rennes1.fr">University of Rennes&nbsp;1</a> (France).</p> -->
-	    <!-- <p>My research interests cover various aspects of privacy and related societal issues.</p> -->
+	<h1 span class="title cyan">Antoine Laurent</h1>
+    <aside>
+        <p class="im"><IMG id="borderimg" SRC="images/output_VhFkRH.gif"></p>
+        <p>I am currently a PhD student at <a href="https://uqam.ca/">Université du Québec à
+            Montréal</a> (Canada) supervised by  <a
+            href="https://sebastiengambs.openum.ca/">Sébastien Gambs</a> (<a
+        href="https://legalia.uqam.ca/">LEGALIA</a>) and <a
+        href="http://homepages.laas.fr/mkilliji/MOK_Home/Marc-Olivier_Killijian.html">Marc-Olivier
+    Kilijian</a> (<a href="https://www.laas.fr/public/">LAAS-CNRS</a>).</p>
+        <p class="b">To write</p>
+        <!-- <p>My research interests cover various aspects of privacy and related societal issues .</p> -->
 	</aside>
 	<aside>
-	    <h2>Contact</h2>
-	    <!-- <p>You can reach me at <a href="mailto:beziaud.louis@courrier.uqam.ca">beziaud.louis@courrier.uqam.ca</a> (<a href="lbeziaud.gpg">gpg</a>)</p> -->
+	    <h2 class="subtitle pink">Contact</h2>
+	    <p>You can reach me at <a href="mailto:laurent.antoine@courrier.uqam.ca">laurent.antoine@courrier.uqam.ca</a>. <!-- (<a href="lbeziaud.gpg">gpg</a>)</p> -->
 	</aside>
 	<aside>
-	    <h2>Publications</h2>
-	    <!-- <p>See also <a href="https://dblp.org/pers/hd/b/B=eacute=ziaud:Louis">dblp</a>, <a href="https://hal.inria.fr/search/index/q/*/authIdHal_s/louis-beziaud">HAL</a>, <a href="https://scholar.google.com/citations?user=IH9WjU4AAAAJ">Google Scholar</a>, <a href="https://orcid.org/0000-0002-4974-3492">ORCID</a></p> -->
-	    <!-- <ol> -->
-		<!-- <li> -->
-		    <!-- Louis Béziaud, Tristan Allard, David Gross-Amblard. <a href="https://doi.org/10.1007/978-3-319-64471-4_2">Lightweight privacy-preserving task assignment in skill-aware crowdsourcing</a>. In <em>Proc. of the 28<sup>th</sup>&nbsp;International Conference on Database and Expert Systems Applications (DEXA 2017)</em>,  Lecture Notes in Computer Science. Springer, 2017. -->
-		    <!-- <small> -->
-			<!-- <a href="https://hal.inria.fr/hal-01580249">[short]</a> -->
-			<!-- <a href="https://hal.inria.fr/hal-01534682">[full]</a> -->
-		    <!-- </small> -->
-		<!-- </li> -->
-	    <!-- </ol> -->
-	</aside>
+	    <h2 class="subtitle yellish">Teaching</h2>
+        <p class="b">To write</p>
 	<aside>
-	    <h2>Past Work</h2>
+	    <h2 class="subtitle springgreen">Past Work</h2>
+        <p class="b">To write</p>
 	    <!-- <p>More details on my <a href="cv.pdf">CV <small>[pdf]</small></a></p> -->
 	    <!-- <p>In 2018 I did a 3-months internship with <a href="https://sebastiengambs.openum.ca/">Sébastien Gambs</a> at <a href="https://uqam.ca/">UQAM</a> (Canada) on the anonymization of court decisions</a>.</p> -->
 	    <!-- <p>I completed my Master's thesis in 2018 at <a href="https://www.inria.fr/">Inria</a> Grenoble (France) with <a href="https://planete.inrialpes.fr/~ccastel/">Claude Castelluccia</a> and <a href="https://planete.inrialpes.fr/people/lemetayer/">Daniel Le Métayer</a> (<a href="https://team.inria.fr/privatics/">Privatics team</a>) by working on the privacy of national identity systems.<br> -->
@@ -83,6 +168,21 @@
 	    <!-- <p> -->
 		<!-- I did a 2-months internship in 2016 with <a href="https://sites.google.com/site/tristanallardhome/">Tristan Allard</a> and <a href="http://www-druid.irisa.fr/david-gross-amblard/">David Gross-Amblard</a> (<a href="https://www-druid.irisa.fr">DRUID team</a>) at <a href="https://www.irisa.fr">IRISA</a> Rennes (France) on privacy-preserving crowdsourcing platform.<br> -->
 	    <!-- </p> -->
+	</aside>
+	<aside>
+	    <h2 class="subtitle orchid">Publications</h2>
+        <p class="b">To write (literally)</p>
+	    <!--     <h2 class="subtitle color">Publications</h2> -->
+	    <!-- <p>See also <a href="https://dblp.org/pers/hd/b/B=eacute=ziaud:Louis">dblp</a>, <a href="https://hal.inria.fr/search/index/q/*/authIdHal_s/louis-beziaud">HAL</a>, <a href="https://scholar.google.com/citations?user=IH9WjU4AAAAJ">Google Scholar</a>, <a href="https://orcid.org/0000-0002-4974-3492">ORCID</a></p> -->
+	    <!-- <ol> -->
+		<!-- <li> -->
+		    <!-- Louis Béziaud, Tristan Allard, David Gross-Amblard. <a href="https://doi.org/10.1007/978-3-319-64471-4_2">Lightweight privacy-preserving task assignment in skill-aware crowdsourcing</a>. In <em>Proc. of the 28<sup>th</sup>&nbsp;International Conference on Database and Expert Systems Applications (DEXA 2017)</em>,  Lecture Notes in Computer Science. Springer, 2017. -->
+		    <!-- <small> -->
+			<!-- <a href="https://hal.inria.fr/hal-01580249">[short]</a> -->
+			<!-- <a href="https://hal.inria.fr/hal-01534682">[full]</a> -->
+		    <!-- </small> -->
+		<!-- </li> -->
+	    <!-- </ol> -->
 	</aside>
     </body>
 </html>
