@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<!-- 2025-02-09 Sun 18:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="Antoine Laurent" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org64a492f" class="outline-2">
+<h2 id="org64a492f"><span class="section-number-2">1.</span> Exploration des réglementations de stationnements</h2>
+<div class="outline-text-2" id="text-1">
+
+<div id="orgffcc451" class="figure">
+<p><img src="intro.jpg" alt="panneau image" width="50%" align="center" />
+</p>
+</div>
+
+<p>
+Vous êtes vous déjà demandé qu&rsquo;est ce qui occupe la plupart de la place sur la bordure de rue ? La réponse est le stationnement. Néanmoins, il n&rsquo;est pas répartit de façon égale partout. Entre autres, les demandes des citoyens, les passages de bus où encore le nettoyage de rue viennent réglementer qui et quoi peut utiliser la bordure de rue à tout moment du jour et de la nuit.
+</p>
+
+<p>
+Dans ce notebook, nous allons essayer de comprendre comment une la bordure de rue est allouée dans zone de l&rsquo;arrondissement Plateau-Mont-Royal mais aussi de savoir où il est possible ou non de se stationner.
+</p>
+
+<p>
+Dans ce but, nous allons utiliser les données issues de <a href="https://donnees.montreal.ca/dataset/stationnement-sur-rue-signalisation-courant">SIGNALEC</a>. Ce sont des données d&rsquo;opérations de pose et de mise à jours des différents panneaux de stationnements. La base de données est composée de deux tables :
+</p>
+<ul class="org-ul">
+<li>une table de point GPS qui représentent les poteaux ainsi que les différents types de panneaux accrochés dessus,</li>
+<li>et l&rsquo;autre qui donne une description de chaque panneau possible.</li>
+</ul>
+
+<p>
+Pour le traitement de données et l&rsquo;analyse, nous nous baserons sur deux paquets python suivant :
+</p>
+<ol class="org-ol">
+<li><a href="https://github.com/alaurent34/mtl_street_sign_to_curblr">cygne</a> qui comprend le script `signalec.py` et permet de faire le prétraitement des données.</li>
+<li><a href="https://pypi.org/project/onstreet-parking-study/">lapin</a> qui comprend la class Curb et permet d&rsquo;analyser les données de signalisations.</li>
+</ol>
+</div>
+<div id="outline-container-org4017b94" class="outline-3">
+<h3 id="org4017b94"><span class="section-number-3">1.1.</span> Données Nécéssaires</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-orgf914970" class="outline-4">
+<h4 id="orgf914970"><span class="section-number-4">1.1.1.</span> Données SIGNALEC préprocessées</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+Les données proviennent du <a href="https://donnees.montreal.ca/dataset/stationnement-sur-rue-signalisation-courant">portail des données ouvertes</a> de la ville de Montréal. Elles ont été pré-traitées à l&rsquo;aide du script <a href="https://github.com/alaurent34/mtl_street_sign_to_curblr/blob/main/signalec.py">signalec.py</a> en libre accès sur mon github personnel. Le préprocessing correspond au map-matching des poteaux sur les segments du <a href="https://donnees.montreal.ca/dataset/geobase">réseau routier de Montréal</a> et au chainage des différents panneaux entre eux pour créer des segments de réglementation.
+</p>
+
+<p>
+En effet chaque poteau comporte plusieurs réglementations différentes et une zone de réglementation est définie soit par :
+</p>
+<ol class="org-ol">
+<li>un panneau de début (fléche du troittoir vers la rue) et un panneau de fin (flèche de la rue vers le trottoir).</li>
+<li>un panneau de répétition (sans flèche où avec un flèche de double sens).</li>
+</ol>
+
+<p>
+Chaque zone doit être inscrite entre deux intersections. C&rsquo;est-à-dire qu&rsquo;une zone ne peu s&rsquo;éntendre d&rsquo;un tronçon routier à un autre sans un rappel de la réglementation sur le prochain tronçon.
+</p>
+
+<p>
+L&rsquo;algorithme traite alors chaque tronçon indépendemment, isole les panneaux qui ont une réglementation similaire (ici qui ont la meme description de signalisation ou RPA) et les transformes en zone géographique le long du réseau routier.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #715ab1;">curblr</span> = gpd.read_file(<span style="color: #2d9574;">"../signalec_to_curblr/output/sig_sta_preprocessed.geojson"</span>)
+curblr.rename(columns=<span style="color: #3a81c3; font-weight: bold;">lambda</span> x: x.lower(), inplace=<span style="color: #4e3163;">True</span>)
+curblr[[<span style="color: #2d9574;">"id_trc"</span>, <span style="color: #2d9574;">"start"</span>, <span style="color: #2d9574;">"end"</span>, <span style="color: #2d9574;">"length"</span>, <span style="color: #2d9574;">"description_rpa"</span>]].<span style="color: #3a81c3;">round</span>().head()
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">id<sub>trc</sub></th>
+<th scope="col" class="org-right">start</th>
+<th scope="col" class="org-right">end</th>
+<th scope="col" class="org-right">length</th>
+<th scope="col" class="org-left">description<sub>rpa</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1230036</td>
+<td class="org-right">0.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">13.0</td>
+<td class="org-left">\A EN TOUT TEMPS</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1230036</td>
+<td class="org-right">56.0</td>
+<td class="org-right">nan</td>
+<td class="org-right">14.0</td>
+<td class="org-left">\A EN TOUT TEMPS</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">1230036</td>
+<td class="org-right">0.0</td>
+<td class="org-right">nan</td>
+<td class="org-right">70.0</td>
+<td class="org-left">&para; 19h-20h MER. 1 AVRIL AU 1 DEC.</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">1230036</td>
+<td class="org-right">0.0</td>
+<td class="org-right">nan</td>
+<td class="org-right">70.0</td>
+<td class="org-left">\A EN TOUT TEMPS</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">1230037</td>
+<td class="org-right">0.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">13.0</td>
+<td class="org-left">\A EN TOUT TEMPS</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Dans l&rsquo;exemple ci-dessus, on voit que l&rsquo;interdiction d&rsquo;arrêt en tout temps, sur le tronçon `123006` débute au commencement du tronçon et fini à environs 13m de l&rsquo;intersection de début. Sur le même segment, une autre interdiction d&rsquo;arrêt commence à 56m du tronçon et s&rsquo;etend jusqu&rsquo;à l&rsquo;intersection. C&rsquo;est une configuration normale puisque pour des raisons de sécurité il est interdit de s&rsquo;arrêter proche d&rsquo;une intersection car cela impacte la visibilité de l&rsquo;intersection (ex: un pietons qui traverse).
+</p>
+
+<p>
+<span class="underline">Note</span>: Le sens du référencement linéaire des poteaux sur le réseau routier est effectué dans le sens de la numérisation du réseau routier (soit dans le sens de la numérotation civique dans le cas de Montréal).
+</p>
+</div>
+</div>
+<div id="outline-container-orge9f56e0" class="outline-4">
+<h4 id="orge9f56e0"><span class="section-number-4">1.1.2.</span> Correspondance entre les réglementation de SIGNALEC et leur format JSON</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+Dans les données ci-dessus, les réglementations sont décrites textuellement. Pour pouvoir faire des requètes informatiques sur ces réglementation, il est nécéssaire de transformer l&rsquo;information dans un format intelligible pour l&rsquo;ordinateur. Le fichier `rules.json` contient le mapping entre les réglementation textuelle et un format JSON utilisée par la classe Curb (que l&rsquo;on utilisera un peu plus loin) qui permet de gérer les différentes réglementation de stationnement. Comme c&rsquo;est un peu long et rebarbatif à lire, on le cache dans un fichier séparé et n&rsquo;affichons qu&rsquo;un exemple de ce mapping ci-dessous.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">mod&#232;le utilis&#233; par la classe RestrictionHandler</span>
+<span style="color: #715ab1;">data</span> = {
+<span style="color: #2d9574;">"properties"</span>: {
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"id"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"end"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"start"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"id_trc"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"length"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"realEnd"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"realStart"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"definition"</span>: {},
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"cote_rue_id"</span>: <span style="color: #4e3163;">None</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"non_parcouru"</span>: <span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">"parentLength"</span>: <span style="color: #4e3163;">None</span>
+<span style="color: #a2ced3d9d433;"> </span> }
+}
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Correspondance entre SIGNALEC et le mod&#232;le ci dessus.</span>
+<span style="color: #3a81c3; font-weight: bold;">with</span> <span style="color: #3a81c3;">open</span>(<span style="color: #2d9574;">'rules.json'</span>, <span style="color: #2d9574;">'r'</span>, encoding=<span style="color: #2d9574;">'utf-8'</span>) <span style="color: #3a81c3; font-weight: bold;">as</span> f:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">convert</span> = json.load(f)
+ 
+<span style="color: #3a81c3;">print</span>(convert[<span style="color: #2d9574;">"</span><span style="color: #4e3163;">\\</span><span style="color: #2d9574;">P 19h-20h MER. 1 AVRIL AU 1 DEC."</span>])
+</pre>
+</div>
+
+<pre class="example">
+{'completed': True, 'restrictions': [{'type': 'Entretien', 'jours': ['mercredi'], 'heure_debut': '19:00', 'heure_fin': '20:00', 'jour_debut': 1, 'jour_fin': 1, 'mois_debut': 'Avril', 'mois_fin': 'Décembre'}], 'extended_attributes': {'angled': False, 'number_of_places': '', 'fixed_number_of_places': False}, 'interdiction_complete': False}
+</pre>
+</div>
+</div>
+<div id="outline-container-org554bcdc" class="outline-4">
+<h4 id="org554bcdc"><span class="section-number-4">1.1.3.</span> Zone d&rsquo;étude</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<p>
+Pour des raisons de performance et de lisibilité, nous traitons uniquement une petite zone de l&rsquo;ile de Montréal. La zone choisie correspond à quelques rues à l&rsquo;Est du parc Laurier.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #715ab1;">limit</span> = gpd.read_file(<span style="color: #2d9574;">"../signalec_to_curblr/data/limit.geojson"</span>)
+
+<span style="color: #715ab1;">ax</span> = limit.plot(figsize=(<span style="color: #4e3163;">15</span>, <span style="color: #4e3163;">15</span>), facecolor=<span style="color: #2d9574;">"none"</span>, edgecolor=<span style="color: #2d9574;">"k"</span>, linewidth=<span style="color: #4e3163;">2</span>, linestyle=<span style="color: #2d9574;">"-"</span>)
+ax.tick_params(left = <span style="color: #4e3163;">False</span>, right = <span style="color: #4e3163;">False</span> , labelleft = <span style="color: #4e3163;">False</span> ,
+<span style="color: #a2ced3d9d433;"> </span>               labelbottom = <span style="color: #4e3163;">False</span>, bottom = <span style="color: #4e3163;">False</span>)
+cx.add_basemap(ax, crs=limit.crs)
+</pre>
+</div>
+
+<div id="orgc34ae6e" class="figure">
+<p><img src="limits.png" alt="limits.png" width="80%" align="center" />
+</p>
+<p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Zone d&rsquo;étude</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8937c36" class="outline-4">
+<h4 id="org8937c36"><span class="section-number-4">1.1.4.</span> Le réseau routier</h4>
+<div class="outline-text-4" id="text-1-1-4">
+<p>
+Enfin il nous faut charger le réseau routier de la zone pour pouvoir connaitre la taille des rues. En effet, ci vous avez prété attention plus haut, dans les données réglementations, nous connaissons la tailles des réglementations mais pas la longueur des rues. Cette information est essentielle pour savoir si une réglementation couvre la totalité d&rsquo;une rue.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #715ab1;">url_road</span> = <span style="color: #2d9574;">"https://donnees.montreal.ca/dataset/984f7a68-ab34-4092-9204-4bdfcca767c5/resource/9d3d60d8-4e7f-493e-8d6a-dcd040319d8d/download/geobase.json"</span>
+<span style="color: #715ab1;">roads</span> = gpd.read_file(url_road)
+<span style="color: #715ab1;">limit</span> = limit.to_crs(roads.crs)
+<span style="color: #715ab1;">roads</span> = gpd.sjoin(roads, limit[[<span style="color: #2d9574;">'geometry'</span>]], predicate=<span style="color: #2d9574;">'within'</span>, how=<span style="color: #2d9574;">'inner'</span>)
+<span style="color: #715ab1;">roads</span> = roads.rename(columns=<span style="color: #3a81c3; font-weight: bold;">lambda</span> x: x.lower())
+
+
+<span style="color: #715ab1;">ax</span> = roads.plot(figsize=(<span style="color: #4e3163;">15</span>, <span style="color: #4e3163;">15</span>), facecolor=<span style="color: #2d9574;">"none"</span>, edgecolor=<span style="color: #2d9574;">"k"</span>, linewidth=<span style="color: #4e3163;">2</span>, linestyle=<span style="color: #2d9574;">"-"</span>)
+ax.tick_params(
+<span style="color: #a2ced3d9d433;"> </span>   left=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   right=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   labelleft=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   labelbottom=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   bottom=<span style="color: #4e3163;">False</span>
+)
+cx.add_basemap(ax, crs=roads.crs)
+</pre>
+</div>
+
+<div id="org3e147d1" class="figure">
+<p><img src="roads.png" alt="roads.png" width="80%" align="center" />
+</p>
+<p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Réseau routier</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc1c5527" class="outline-3">
+<h3 id="orgc1c5527"><span class="section-number-3">1.2.</span> Combinaisons des différents ensembles de données</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Ici nous associons les réglementations avec les rues et avec leur représenation en JSON.
+</p>
+</div>
+<div id="outline-container-orgcc1144a" class="outline-4">
+<h4 id="orgcc1144a"><span class="section-number-4">1.2.1.</span> Longueurs des zones et longueurs des rues</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">comput segment length</span>
+<span style="color: #715ab1;">segments_length</span> = roads.to_crs(<span style="color: #2d9574;">'epsg:32188'</span>).set_index(<span style="color: #2d9574;">'id_trc'</span>).length.to_frame(<span style="color: #2d9574;">'length'</span>)
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">add segment length to reglementation data</span>
+<span style="color: #715ab1;">curblr</span> = curblr.join(segments_length, on=<span style="color: #2d9574;">'id_trc'</span>, lsuffix=<span style="color: #2d9574;">'_rule'</span>)
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">add road geometry to reglementation data</span>
+<span style="color: #715ab1;">curblr</span> = curblr.join(roads.set_index(<span style="color: #2d9574;">'id_trc'</span>)[[<span style="color: #2d9574;">'geometry'</span>]].rename_geometry(<span style="color: #2d9574;">'street_geom'</span>), on=<span style="color: #2d9574;">'id_trc'</span>)
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">if end is set to None in reglementation data, set it to the length of the segment</span>
+curblr.loc[curblr[<span style="color: #2d9574;">'end'</span>].isna(), <span style="color: #2d9574;">'end'</span>] = curblr.loc[curblr[<span style="color: #2d9574;">'end'</span>].isna(), <span style="color: #2d9574;">'length_rule'</span>].copy()
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">show</span>
+curblr[[<span style="color: #2d9574;">"id_trc"</span>, <span style="color: #2d9574;">"start"</span>, <span style="color: #2d9574;">"end"</span>, <span style="color: #2d9574;">"length_rule"</span>, <span style="color: #2d9574;">"length"</span>]].<span style="color: #3a81c3;">round</span>().head()
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">id<sub>trc</sub></th>
+<th scope="col" class="org-right">start</th>
+<th scope="col" class="org-right">end</th>
+<th scope="col" class="org-right">length<sub>rule</sub></th>
+<th scope="col" class="org-right">length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1230036.0</td>
+<td class="org-right">0.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">70.0</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1230036.0</td>
+<td class="org-right">56.0</td>
+<td class="org-right">14.0</td>
+<td class="org-right">14.0</td>
+<td class="org-right">70.0</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">1230036.0</td>
+<td class="org-right">0.0</td>
+<td class="org-right">70.0</td>
+<td class="org-right">70.0</td>
+<td class="org-right">70.0</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">1230036.0</td>
+<td class="org-right">0.0</td>
+<td class="org-right">70.0</td>
+<td class="org-right">70.0</td>
+<td class="org-right">70.0</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">1230037.0</td>
+<td class="org-right">0.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">79.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Les valeurs dans le champ `end` qui étaient à `nan` ont ont été remplacées par la taille du tronçon de rue.
+</p>
+</div>
+</div>
+<div id="outline-container-orgc23e2b8" class="outline-4">
+<h4 id="orgc23e2b8"><span class="section-number-4">1.2.2.</span> Format de réglementation</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+Nous devons maintenant créer le format JSON des réglementations afin de pouvoir utiliser la classe Curb. Cette classe a été développé dans le but d&rsquo;aider à l&rsquo;analyse des réglementations de stationnement, cette classe fait partie du paquet <a href="https://pypi.org/project/onstreet-parking-study/">onstreet<sub>parking</sub><sub>study</sub></a>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #715ab1;">res_ext</span> = []
+<span style="color: #3a81c3; font-weight: bold;">for</span> idx, curb <span style="color: #3a81c3; font-weight: bold;">in</span> curblr.iterrows():
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> curb.description_rpa <span style="color: #3a81c3; font-weight: bold;">in</span> convert.keys():
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">curb_data</span> = deepcopy(data)
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"id"</span>] = idx
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"end"</span>] = curb.end
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"start"</span>] = curb.start
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"id_trc"</span>] = curb.id_trc
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"length"</span>] = curb.length_rule
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"realEnd"</span>] = curb.end
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"realStart"</span>] = curb.start
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> curb.side_of_street == <span style="color: #4e3163;">1</span>:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"cote_rue_id"</span>] = curb.id_trc * <span style="color: #4e3163;">10</span> + <span style="color: #4e3163;">1</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">else</span>:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"cote_rue_id"</span>] = curb.id_trc * <span style="color: #4e3163;">10</span> + <span style="color: #4e3163;">2</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">"parentLength"</span>] = curb.length
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   curb_data[<span style="color: #2d9574;">'properties'</span>][<span style="color: #2d9574;">'definition'</span>] = convert[curb.description_rpa]
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">curb_data</span>[<span style="color: #2d9574;">'type'</span>] = <span style="color: #2d9574;">'Feature'</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">curb_data</span>[<span style="color: #2d9574;">'geometry'</span>] = {
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'type'</span>: <span style="color: #2d9574;">'LineString'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'coordinates'</span>: [<span style="color: #3a81c3;">list</span>(x) <span style="color: #3a81c3; font-weight: bold;">for</span> x <span style="color: #3a81c3; font-weight: bold;">in</span> <span style="color: #3a81c3;">list</span>(curb.geometry.coords)]
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   }
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> curb.geometry.is_empty:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">continue</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   res_ext.append(curb_data)
+
+</pre>
+</div>
+
+
+<p>
+Voici un exemple d&rsquo;une règlementation de stationnement dans le format JSON
+</p>
+
+<pre class="example" id="org5d93f6d">
+{
+  "properties": {
+    "id": 0,
+    "end": 12.868282603590274,
+    "start": 0.0,
+    "id_trc": 1230036,
+    "length": 12.868282603968101,
+    "realEnd": 12.868282603590274,
+    "realStart": 0.0,
+    "definition": {
+      "completed": true,
+      "restrictions": [
+        {
+          "type": "Interdiction",
+          "jours": [],
+          "jour_fin": null,
+          "mois_fin": null,
+          "heure_fin": null,
+          "jour_debut": null,
+          "mois_debut": null,
+          "heure_debut": null
+        }
+      ],
+      "extended_attributes": {
+        "angled": false,
+        "number_of_places": "",
+        "fixed_number_of_places": false
+      },
+      "interdiction_complete": false
+    },
+    "cote_rue_id": 12300362,
+    "non_parcouru": false,
+    "parentLength": 70.17735135691429
+  },
+  "type": "Feature",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        -73.5896995038337,
+        45.53038002698135
+      ],
+      [
+        -73.58965052535827,
+        45.53043408262109
+      ],
+      [
+        -73.58961113710203,
+        45.53047775480375
+      ]
+    ]
+  }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orga47d87f" class="outline-3">
+<h3 id="orga47d87f"><span class="section-number-3">1.3.</span> Analyse de la capacité</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Il est maintenant temps de faire quelques analyses avec l&rsquo;aide de la classe Curbs ! :D
+</p>
+</div>
+<div id="outline-container-org90c295d" class="outline-4">
+<h4 id="org90c295d"><span class="section-number-4">1.3.1.</span> Chargement des données dans Curb</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #3a81c3; font-weight: bold;">from</span> lapin.core.restrictions <span style="color: #3a81c3; font-weight: bold;">import</span> Curbs
+
+<span style="color: #715ab1;">json_regulation</span> = deepcopy(res_ext)
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">la classe s'attend &#224; certain noms pour les colonnes.</span>
+<span style="color: #715ab1;">roads</span> = roads.rename(columns={<span style="color: #2d9574;">"id_trc"</span>: <span style="color: #2d9574;">"segment"</span>, <span style="color: #2d9574;">"nom_voie"</span>: <span style="color: #2d9574;">"street"</span>}).copy()
+
+<span style="color: #715ab1;">laurier_curb</span> = Curbs.from_json(
+<span style="color: #a2ced3d9d433;"> </span>   regulations=json_regulation,
+<span style="color: #a2ced3d9d433;"> </span>   roads=roads,
+<span style="color: #a2ced3d9d433;"> </span>   veh_size=<span style="color: #4e3163;">6</span>, <span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">taille des v&#233;hicules utilis&#233;e (en m&#232;tre)</span>
+)
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8693d0e" class="outline-4">
+<h4 id="org8693d0e"><span class="section-number-4">1.3.2.</span> Capacité par type de réglementations</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+Une des fonctionnalité de la classe est de connaitre le nombre de stationnement, aussi appelée la capacité d&rsquo;une rue, par type de réglementation. Voici ce que ça donne sur notre zone d&rsquo;étude :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">laurier_curb.get_capacity_by_reg()
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Interdiction</td>
+<td class="org-right">295.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Aucune restrictions</td>
+<td class="org-right">479.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Mobilité réduite</td>
+<td class="org-right">5.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Réservé aux résidents</td>
+<td class="org-right">25.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Débarcadère</td>
+<td class="org-right">2.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Remarquez que seules les réglementation dites permanente, soit sans contraintes temporaire, sont présentes. En effet si aucune information temporelle n&rsquo;est founie en intrant alors seule les réglementations permanentes sont calculées. Faisons un autre essai en spécifiant un jour et une heure.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python">laurier_curb.get_capacity_by_reg(hour=datetime.time(<span style="color: #4e3163;">10</span>), day=<span style="color: #2d9574;">'mer'</span>)
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Interdiction</td>
+<td class="org-right">295.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Aucune restrictions</td>
+<td class="org-right">110.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Réservé aux résidents</td>
+<td class="org-right">320.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Mobilité réduite</td>
+<td class="org-right">5.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Débarcadère</td>
+<td class="org-right">3.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Livraison</td>
+<td class="org-right">13.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Entretien</td>
+<td class="org-right">60.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Tout de suite, d&rsquo;autres types de réglementation apparaissent sur la zone. Il se trouve qu&rsquo;il y a en effet des zones de débarcadère, de zones de livraisons et des entretiens qui sont présents sur la zone le mercredi à 10h00. Maintenant nous pouvons visualisez ces informations !
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgcacf6de"></a>Visualisation de la capacité par type de réglementation<br />
+<div class="outline-text-5" id="text-1-3-2-1">
+<p>
+Pour ce type de graphique, je préfères montrer deux scénarios. Le premier en heure de pointe, lorsqu&rsquo;il y a le plus de réglementations différentes active et qu&rsquo;il peut être difficile pour un visiteur de se stationner. Le second en heure creuse, là où il y a le moins de réglementations actives. Ainsi moins de bruit se retrouve dans le graphique que lorsque toutes l&rsquo;information, pour chaque journée et chaque heure est montrée.
+</p>
+
+<p>
+Les définitions de graphiques avec matplotlib sont toujours très verbeuses. Néanmoins ci-dessous on retrouve la présentation graphique de la capacité pour les scénarios :
+</p>
+<ol class="org-ol">
+<li>Mercredi à 10a.m</li>
+<li>Mercredi à 5a.m</li>
+</ol>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Plotting restriction for Wednesday</span>
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Capacit&#233;e &#224; 10h le mercredi</span>
+<span style="color: #715ab1;">laurier_pointe</span> = laurier_curb.get_capacity_by_reg(hour=datetime.time(<span style="color: #4e3163;">10</span>), day=<span style="color: #2d9574;">'mer'</span>)
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Capacit&#233; &#224; 5h le mercredi</span>
+<span style="color: #715ab1;">laurier_creu</span> = laurier_curb.get_capacity_by_reg(hour=datetime.time(<span style="color: #4e3163;">5</span>), day=<span style="color: #2d9574;">'mer'</span>)
+
+<span style="color: #715ab1;">laurier_reg</span> = pd.DataFrame.from_dict(laurier_pointe, orient=<span style="color: #2d9574;">'index'</span>, columns=[<span style="color: #2d9574;">'Mercredi 10h'</span>])
+<span style="color: #715ab1;">laurier_reg_</span> = pd.DataFrame.from_dict(laurier_creu, orient=<span style="color: #2d9574;">'index'</span>, columns=[<span style="color: #2d9574;">'Mercredi 5h'</span>])
+<span style="color: #715ab1;">laurier_reg</span> = pd.concat(
+<span style="color: #a2ced3d9d433;"> </span>   [
+<span style="color: #a2ced3d9d433;"> </span>   laurier_reg,
+<span style="color: #a2ced3d9d433;"> </span>   laurier_reg_
+<span style="color: #a2ced3d9d433;"> </span>   ],
+<span style="color: #a2ced3d9d433;"> </span>   axis=<span style="color: #4e3163;">1</span>
+)
+<span style="color: #715ab1;">laurier_reg</span> = laurier_reg.loc[[
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'D&#233;barcad&#232;re'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'Aucune restrictions'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'R&#233;serv&#233; aux r&#233;sidents'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'Interdiction'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'Livraison'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2d9574;">'Mobilit&#233; r&#233;duite'</span>
+]]
+<span style="color: #715ab1;">laurier_reg</span> = laurier_reg.sort_values(<span style="color: #2d9574;">'Mercredi 10h'</span>, ascending=<span style="color: #4e3163;">False</span>)
+<span style="color: #715ab1;">laurier_reg_perc</span> = laurier_reg / laurier_reg.<span style="color: #3a81c3;">sum</span>() * <span style="color: #4e3163;">100</span>
+laurier_reg_perc.T.plot.barh(
+<span style="color: #a2ced3d9d433;"> </span>   stacked=<span style="color: #4e3163;">True</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #2aa1ae; background-color: #ecf3ec;">#</span><span style="color: #2aa1ae; background-color: #ecf3ec;">colormap='tab10',</span>
+<span style="color: #a2ced3d9d433;"> </span>   color=color,
+<span style="color: #a2ced3d9d433;"> </span>   figsize=(<span style="color: #4e3163;">18</span>,<span style="color: #4e3163;">10</span>),
+<span style="color: #a2ced3d9d433;"> </span>   width=<span style="color: #4e3163;">0.8</span>,
+).legend(
+<span style="color: #a2ced3d9d433;"> </span>   bbox_to_anchor=(<span style="color: #4e3163;">1.0</span>, <span style="color: #4e3163;">1.0</span>),
+<span style="color: #a2ced3d9d433;"> </span>   fontsize=<span style="color: #2d9574;">'large'</span>
+)
+<span style="color: #715ab1;">ax</span> = plt.gca()
+ax.set_ylabel(<span style="color: #2d9574;">"Semaine"</span>)
+ax.set_xlabel(<span style="color: #2d9574;">"Proportion de places disponibles"</span>)
+ax.invert_yaxis()
+ax.grid(<span style="color: #4e3163;">True</span>, which=<span style="color: #2d9574;">'major'</span>, axis=<span style="color: #2d9574;">'x'</span>)
+ax.grid(<span style="color: #4e3163;">False</span>, which=<span style="color: #2d9574;">'major'</span>, axis=<span style="color: #2d9574;">'y'</span>)
+
+
+<span style="color: #3a81c3; font-weight: bold;">for</span> n, x <span style="color: #3a81c3; font-weight: bold;">in</span> <span style="color: #3a81c3;">enumerate</span>([*laurier_reg.T.index.values]):
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">for</span> (proportion, count, y_loc) <span style="color: #3a81c3; font-weight: bold;">in</span> <span style="color: #3a81c3;">zip</span>(laurier_reg_perc.T.loc[x],
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>                                     laurier_reg.T.loc[x],
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>                                     laurier_reg_perc.T.loc[x].cumsum()):
+     
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> proportion &gt; <span style="color: #4e3163;">20</span>:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   plt.text(y=n,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       x=(y_loc - proportion) + (proportion / <span style="color: #4e3163;">2</span>),
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       s=f<span style="color: #2d9574;">'</span>{count:.0f}<span style="color: #2d9574;"> places (</span>{proportion:.0f}<span style="color: #2d9574;">%)'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       color=<span style="color: #2d9574;">"white"</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       fontsize=<span style="color: #4e3163;">10</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       fontweight=<span style="color: #2d9574;">'bold'</span>,
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       font=<span style="color: #2d9574;">'calibri'</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>       )
+             
+plt.tight_layout()
+<span style="color: #715ab1;">f</span> = plt.gcf()
+f
+</pre>
+</div>
+
+<div id="orge851c5c" class="figure">
+<p><img src="reg_laurier.png" alt="reg_laurier.png" width="120%" align="center" />
+</p>
+<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Capacités par réglementation</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgac31a24" class="outline-4">
+<h4 id="orgac31a24"><span class="section-number-4">1.3.3.</span> Carte des réglementations</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<p>
+La dernière visualisation de ce notebook est la représentation des zones de réglementations sur une carte. Faire une belle cartographie demande du temps et de l&rsquo;effort et ne peu pas être complétement automatisée. Ici je présente une façon rapide de présenter l&rsquo;information sous forme de carte et il reste donc beaucoup de place à l&rsquo;amélioration :).
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org96f8356"></a>Fonctions utiles pour notre carte<br />
+<div class="outline-text-5" id="text-1-3-3-1">
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #3a81c3; font-weight: bold;">from</span> typing <span style="color: #3a81c3; font-weight: bold;">import</span> Tuple, List
+
+<span style="color: #3a81c3; font-weight: bold;">import</span> numpy <span style="color: #3a81c3; font-weight: bold;">as</span> np
+<span style="color: #3a81c3; font-weight: bold;">import</span> shapely
+
+<span style="color: #3a81c3; font-weight: bold;">def</span> <span style="color: #6c3163; font-weight: bold;">cut_line_at_dist</span>(line:shapely.LineString,
+<span style="color: #a2ced3d9d433;"> </span>                    dist: <span style="color: #3a81c3;">float</span>) -&gt; Tuple[shapely.LineString, shapely.LineString]:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #da8b55;">""" Cuts a line in two at a distance from its starting point.</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   This is taken from shapely manual and modified to always return</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   a tuple of two Linestring.</span>
+ 
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Parameters</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   ----------</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   line : shapely.LineString</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Line to cut</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   distance : float</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Cuting distance</span>
+     
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Returns</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   -------</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Tuple[shapely.LineString, shapely.LineString]</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   First and last half of the Line cut at distance `dist`</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   """</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> np.<span style="color: #3a81c3;">round</span>(dist,<span style="color: #4e3163;">0</span>) &lt;= <span style="color: #4e3163;">0.0</span>:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">return</span> [[], shapely.LineString(line)]
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> np.ceil(dist) &gt;= line.length:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">return</span> [shapely.LineString(line), []]
+     
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">coords</span> = <span style="color: #3a81c3;">list</span>(line.coords)
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">for</span> i, p <span style="color: #3a81c3; font-weight: bold;">in</span> <span style="color: #3a81c3;">enumerate</span>(coords):
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">point_dist</span> = line.project(shapely.Point(p))
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> point_dist &lt; dist:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">continue</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> point_dist == dist:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">return</span> [
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   shapely.LineString(coords[:i+<span style="color: #4e3163;">1</span>]),
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   shapely.LineString(coords[i:])
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   ]
+         
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">cp</span> = line.interpolate(dist)
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">return</span> [
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   shapely.LineString(coords[:i] + [(cp.x, cp.y)]),
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   shapely.LineString([(cp.x, cp.y)] + coords[i:])
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   ]
+     
+<span style="color: #3a81c3; font-weight: bold;">def</span> <span style="color: #6c3163; font-weight: bold;">split_line_with_points</span>(line:shapely.LineString,
+<span style="color: #a2ced3d9d433;"> </span>                          points:List[shapely.Point]) -&gt; List[shapely.LineString]:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #da8b55;">"""Splits a line string in several segments considering a list of points.</span>
+ 
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   The points used to cut the line are assumed to be in the line string</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   and given in the order of appearance they have in the line string.</span>
+ 
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Taken from https://stackoverflow.com/a/39574007 with minor modifications.</span>
+ 
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Parameters</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   ----------</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   line: shapely.LineString</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Line to split</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   points: List[shapely.Point]</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Collection of point where to split the linestring. Should be in</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   sequential order.</span>
+     
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Returns</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   -------</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   List[shapely.LineString]</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   </span><span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Lines segments cut at each point</span>
+     
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   Example</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   -------</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   &gt;&gt;&gt; line = LineString( [(1,2), (8,7), (4,5), (2,4), (4,7), (8,5), (9,18),</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   ...        (1,2),(12,7),(4,5),(6,5),(4,9)] )</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   &gt;&gt;&gt; points = [Point(2,4), Point(9,18), Point(6,5)]</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   &gt;&gt;&gt; [str(s) for s in split_line_with_points(line, points)]</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   ['LINESTRING (1 2, 8 7, 4 5, 2 4)', 'LINESTRING (2 4, 4 7, 8 5, 9 18)',</span>
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   'LINESTRING (9 18, 1 2, 12 7, 4 5, 6 5)', 'LINESTRING (6 5, 4 9)']</span>
+ 
+<span style="color: #a2ced3d9d433;"> </span><span style="color: #da8b55;">   """</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">segments</span> = []
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">current_line</span> = line
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">for</span> p <span style="color: #3a81c3; font-weight: bold;">in</span> points:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">if</span> <span style="color: #3a81c3; font-weight: bold;">not</span> current_line:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">break</span>
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">d</span> = current_line.project(p)
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">seg</span>, <span style="color: #715ab1;">current_line</span> = cut_line_at_dist(current_line, d)
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #a2ced3d9d433;"> </span>   segments.append(seg)
+<span style="color: #a2ced3d9d433;"> </span>   segments.append(current_line)
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">return</span> segments
+ 
+<span style="color: #715ab1;">v_interpolate</span> = np.vectorize(shapely.line_interpolate_point)
+<span style="color: #715ab1;">v_split_line</span> = np.vectorize(split_line_with_points)
+</pre>
+</div>
+
+
+<p>
+Les données de réglementation traitée sont extraites de la classe Curb sous la forme de table. Cette table ne contient pas la géométrie des segments nécéssaire à la réalisation de la carte.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">r&#233;cup&#232;re l'information des r&#233;glementation sous forme de table</span>
+<span style="color: #715ab1;">curb_gdf</span> = gpd.GeoDataFrame(laurier_curb.to_dataframe(), crs=<span style="color: #2d9574;">'epsg:4326'</span>)
+<span style="color: #715ab1;">curb_gdf</span> = curb_gdf.to_crs(<span style="color: #2d9574;">'epsg:32188'</span>)
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">isole les information de r&#233;f&#233;rencement lin&#233;aire</span>
+<span style="color: #715ab1;">start</span> = curb_gdf[<span style="color: #2d9574;">"loc_start"</span>].values
+<span style="color: #715ab1;">end</span> = curb_gdf[<span style="color: #2d9574;">"loc_end"</span>].values
+<span style="color: #715ab1;">lines</span> = curb_gdf[<span style="color: #2d9574;">"geometry"</span>].values
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">Creer les points de d&#233;part et de fin des reglementation sur le tron&#231;on</span>
+<span style="color: #715ab1;">pt_start</span> = v_interpolate(lines, start)
+<span style="color: #715ab1;">pt_end</span> = v_interpolate(lines, end)
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">cr&#233;er les segments de r&#233;glementations</span>
+<span style="color: #715ab1;">res_geom</span> = <span style="color: #3a81c3;">list</span>(<span style="color: #3a81c3;">map</span>(split_line_with_points, <span style="color: #3a81c3;">list</span>(lines), <span style="color: #3a81c3;">zip</span>(pt_start, pt_end)))
+<span style="color: #715ab1;">res_geom_</span> = [lines[<span style="color: #4e3163;">1</span>] <span style="color: #3a81c3; font-weight: bold;">if</span> lines[<span style="color: #4e3163;">1</span>] <span style="color: #3a81c3; font-weight: bold;">else</span> <span style="color: #4e3163;">None</span> <span style="color: #3a81c3; font-weight: bold;">for</span> lines <span style="color: #3a81c3; font-weight: bold;">in</span> res_geom]
+
+<span style="color: #2aa1ae; background-color: #ecf3ec;"># </span><span style="color: #2aa1ae; background-color: #ecf3ec;">set geometry et geometry_length</span>
+<span style="color: #715ab1;">curb_gdf</span>[<span style="color: #2d9574;">"res_geom"</span>] = res_geom_
+<span style="color: #715ab1;">curb_gdf</span>[<span style="color: #2d9574;">"geom_length"</span>] = [line.length <span style="color: #3a81c3; font-weight: bold;">if</span> line <span style="color: #3a81c3; font-weight: bold;">else</span> <span style="color: #4e3163;">0</span> <span style="color: #3a81c3; font-weight: bold;">for</span> line <span style="color: #3a81c3; font-weight: bold;">in</span> res_geom_]
+curb_gdf.set_geometry(<span style="color: #2d9574;">"res_geom"</span>)
+
+curb_gdf[[<span style="color: #2d9574;">'id'</span>, <span style="color: #2d9574;">'name'</span>, <span style="color: #2d9574;">'side_of_street'</span>, <span style="color: #2d9574;">'geom_length'</span>]].<span style="color: #3a81c3;">round</span>(<span style="color: #4e3163;">2</span>).head()
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">id</th>
+<th scope="col" class="org-left">name</th>
+<th scope="col" class="org-right">side<sub>of</sub><sub>street</sub></th>
+<th scope="col" class="org-right">geom<sub>length</sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">0</td>
+<td class="org-right">1230036</td>
+<td class="org-left">Interdiction</td>
+<td class="org-right">1</td>
+<td class="org-right">70.18</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1230036</td>
+<td class="org-left">Interdiction</td>
+<td class="org-right">-1</td>
+<td class="org-right">14.16</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">1230036</td>
+<td class="org-left">Entretien</td>
+<td class="org-right">-1</td>
+<td class="org-right">14.16</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">1230036</td>
+<td class="org-left">Interdiction</td>
+<td class="org-right">-1</td>
+<td class="org-right">56.01</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">1230036</td>
+<td class="org-left">Entretien</td>
+<td class="org-right">-1</td>
+<td class="org-right">56.01</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+Maintenant que les données sont prêtes, il suffit d&rsquo;appliquer un offset pour les visualiser (les réglementations étant référencée sur la méme ligne, il faut les espacer pour qu&rsquo;elles ne s&rsquo;empilent pas les unes sur les autres).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #3a81c3; font-weight: bold;">def</span> <span style="color: #6c3163; font-weight: bold;">offset</span>(geom: shapely.LineString, distance: <span style="color: #3a81c3;">float</span>) -&gt; shapely.LineString:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #3a81c3; font-weight: bold;">return</span> shapely.offset_curve(geom, distance)
+ 
+<span style="color: #715ab1;">v_offset</span> = np.vectorize(offset)
+
+
+<span style="color: #715ab1;">grouped</span> = curb_gdf.groupby([<span style="color: #2d9574;">"id"</span>, <span style="color: #2d9574;">"side_of_street"</span>])
+
+<span style="color: #715ab1;">curblr_off</span> = []
+<span style="color: #3a81c3; font-weight: bold;">for</span> _, data <span style="color: #3a81c3; font-weight: bold;">in</span> grouped:
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">mapping</span> = {x: i + <span style="color: #4e3163;">1</span> <span style="color: #3a81c3; font-weight: bold;">for</span> i, x <span style="color: #3a81c3; font-weight: bold;">in</span> <span style="color: #3a81c3;">enumerate</span>(data[<span style="color: #2d9574;">"name"</span>].unique())}
+<span style="color: #a2ced3d9d433;"> </span>   <span style="color: #715ab1;">data</span>[<span style="color: #2d9574;">"offset"</span>] = data[<span style="color: #2d9574;">"name"</span>].<span style="color: #3a81c3;">map</span>(mapping) * data[<span style="color: #2d9574;">"side_of_street"</span>] * -<span style="color: #4e3163;">1</span>
+<span style="color: #a2ced3d9d433;"> </span>   curblr_off.append(data)
+ 
+<span style="color: #715ab1;">curblr_off</span> = pd.concat(curblr_off)
+
+<span style="color: #715ab1;">curblr_off</span>[<span style="color: #2d9574;">'geometry'</span>] = v_offset(curblr_off.res_geom, curblr_off.offset * <span style="color: #4e3163;">5</span>)
+
+<span style="color: #715ab1;">ax</span> = curblr_off.plot(figsize=(<span style="color: #4e3163;">20</span>, <span style="color: #4e3163;">20</span>), alpha=<span style="color: #4e3163;">1</span>, column=<span style="color: #2d9574;">"name"</span>, legend=<span style="color: #4e3163;">True</span>, linewidth=<span style="color: #4e3163;">4</span>)
+ax.tick_params(
+<span style="color: #a2ced3d9d433;"> </span>   left=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   right=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   labelleft=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   labelbottom=<span style="color: #4e3163;">False</span>,
+<span style="color: #a2ced3d9d433;"> </span>   bottom=<span style="color: #4e3163;">False</span>
+)
+cx.add_basemap(ax, crs=curblr_off.crs)
+
+</pre>
+</div>
+
+<div id="org8e2ba72" class="figure">
+<p><img src="curb_laurier.png" alt="curb_laurier.png" width="100%" align="center" />
+</p>
+<p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Carte des réglementations</p>
+</div>
+
+<p>
+Et voila ! La carte des réglementation sur la zone d&rsquo;étude ! Bien sur, avec une carte web ou en travaillant la carte et la légende, il serait possible de faire ressortir la temporalités des restrictions sur la carte. Cela laisse du travail pour une prochaine fois :)
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org17533e7" class="outline-3">
+<h3 id="org17533e7"><span class="section-number-3">1.4.</span> Limitations</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Les données de SIGNALEC ne sont pas toujours à jours et peuvent comporter des erreurs de saisies. Pour m&rsquo;en rendre compte, j&rsquo;ai étudier la correspondance entre les panneaux sur ma rue et la signalisation dans SIGNALEC. Bien que l&rsquo;échantillons ne soit pas représentatif, plusieurs panneaux n&rsquo;étaient pas à jours. Les résultats sont donc à prendre avec un grain de sel.
+</p>
+
+<p>
+En bonus voici une photo de moi qui prend en photo des panneau :
+</p>
+
+
+<div id="orge56094b" class="figure">
+<p><img src="panneaux.jpg" alt="panneaux image" title="Panneaux!" align="right" width="40%" />
+</p>
+</div>
+
+
+<div id="orgaf5456f" class="figure">
+<p><img src="moi_panneau.jpg" alt="moi image" title="Moi!" align="left" width="40%" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Auteur: Antoine Laurent</p>
+<p class="date">Created: 2025-02-09 Sun 18:30</p>
+</div>
+</body>
+</html>

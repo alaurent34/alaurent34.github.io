@@ -1,0 +1,634 @@
+{
+    "\\A EN TOUT TEMPS":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Interdiction",
+            "jours": [
+            ],
+            "jour_fin": null,
+            "mois_fin": null,
+            "heure_fin": null,
+            "jour_debut": null,
+            "mois_debut": null,
+            "heure_debut": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 19h-20h MER. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [ "mercredi"
+            ],
+            "heure_debut": "19:00",
+            "heure_fin": "20:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P RESERVE S3R 09h-23h":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Réservé aux résidents",
+            "jours": [
+            ],
+            "heure_debut": "9:00",
+            "heure_fin": "23:00",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 11h30-12h30 MAR. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [ "mardi"
+            ],
+            "heure_debut": "11:30",
+            "heure_fin": "12:30",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 10h-11h MAR. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [ "mardi"
+            ],
+            "heure_debut": "10:00",
+            "heure_fin": "11:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 13h-14h LUN. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [ "lundi"
+            ],
+            "heure_debut": "13:00",
+            "heure_fin": "14:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P RESERVE HANDICAPES (PICTO)":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Mobilité réduite",
+            "jours": [
+            ],
+            "heure_debut": null,
+            "heure_fin": null,
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 12h-13h JEU. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [ "jeudi"
+            ],
+            "heure_debut": "12:00",
+            "heure_fin": "13:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "P 60 min 09h30-16h LUN. AU VEN.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Débarcadère",
+            "jours": ["lundi", "mardi", "mercredi", "jeudi", "vendredi"],
+            "heure_debut": "9:30",
+            "heure_fin": "16:00",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 8H30-9H30  LUN AU JEU 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["lundi", "mardi", "mercredi", "jeudi"],
+            "heure_debut": "8:30",
+            "heure_fin": "9:30",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P LIVRAISON SEULEMENT 08h-12h LUN. AU VEN.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Livraison",
+                "jours": ["lundi", "mardi", "mercredi", "jeudi", "vendredi"],
+            "heure_debut": "8:00",
+            "heure_fin": "12:00",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 09h-10h JEU. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["jeudi"],
+            "heure_debut": "9:00",
+            "heure_fin": "10:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P RESERVE S3R          (EN TOUT TEMPS)":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Réservé aux résidents",
+            "jours": [
+            ],
+            "heure_debut": null,
+            "heure_fin": null,
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 12h30-13h30 MAR. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["mardi"],
+            "heure_debut": "12:30",
+            "heure_fin": "13:30",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 10H30-11H30 MER. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [ "mercredi"
+            ],
+            "heure_debut": "10:30",
+            "heure_fin": "11:30",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 13H30-14H30 JEU. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [
+            ],
+            "heure_debut": "13:30",
+            "heure_fin": "14:30",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P EN TOUT TEMPS":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Interdiction",
+            "jours": [
+            ],
+            "heure_debut": null,
+            "heure_fin": null,
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 07H-08H MAR. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["mardi"],
+            "heure_debut": "7:00",
+            "heure_fin": "8:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P RESERVE S3R 17H-23H":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Réservé aux résidents",
+            "jours": [
+            ],
+            "heure_debut": "17:00",
+            "heure_fin": "23:00",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 07H-08H JEU. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["jeudi"],
+            "heure_debut": "7:00",
+            "heure_fin": "8:00",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 10H30-11H30 LUN. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["lundi"],
+            "heure_debut": "10:30",
+            "heure_fin": "11:30",
+            "jour_debut": 1,
+            "jour_fin": 1,
+            "mois_debut": "Avril",
+            "mois_fin": "Décembre"
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "P 15 MIN 07H-18H LUN. AU VEN.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Débarcadère",
+            "jours": ["lundi", "mardi", "mercredi", "jeudi", "vendredi"],
+            "heure_debut": "7:00",
+            "heure_fin": "18:00",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 12H30-13H30 MER. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["mercredi"],
+            "heure_debut": "12:30",
+            "heure_fin": "13:30",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 08H30-09H30 JEU. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": ["jeudi"],
+            "heure_debut": "8:30",
+            "heure_fin": "9:30",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\A 06H30-09H30 LUN. AU VEN.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Voie réservée",
+            "jours": ["lundi", "mardi", "mercredi", "jeudi", "vendredi"],
+            "heure_debut": "6:30",
+            "heure_fin": "9:30",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P RESERVE S3R 09-23H       (2 SECTEURS)":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Réservé aux résidents",
+            "jours": [
+            ],
+            "heure_debut": "9:00",
+            "heure_fin": "23:00",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "\\P 09h30-10h30 MAR. JEU. 1 AVRIL AU 1 DEC.":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Entretien",
+            "jours": [
+            ],
+            "heure_debut": "9:30",
+            "heure_fin": "10:30",
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    },
+    "P 60 min":
+    {
+        "completed": true,
+        "restrictions": [
+            {
+            "type": "Débarcadère",
+            "jours": [
+            ],
+            "heure_debut": null,
+            "heure_fin": null,
+            "jour_debut": null,
+            "jour_fin": null,
+            "mois_debut": null,
+            "mois_fin": null
+            }
+        ],
+        "extended_attributes": {
+            "angled": false,
+            "number_of_places": "",
+            "fixed_number_of_places": false
+        },
+        "interdiction_complete": false
+    }
+}
